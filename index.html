@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fuori Vetrina — letture, idee e piccole cose che meritano di essere raccontate.">
+  <meta name="theme-color" content="#eee5d8">
+  <title>Fuori Vetrina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Fuori Vetrina, Home">
+        <span class="brand-mark" aria-hidden="true">FV</span>
+        <span>Fuori Vetrina</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigazione principale">
+        <a href="#home">Home</a><a href="#storie">Storie</a><a href="#esplora">Esplora</a><a href="#partecipa">Partecipa</a><a href="#progetto">Il progetto</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Attiva modalità scura" title="Modalità chiara/scura">◐</button>
+        <button id="menuToggle" class="menu-btn" type="button" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+      </div>
+    </div>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Navigazione mobile" hidden>
+      <a href="#home">Home</a><a href="#storie">Storie</a><a href="#esplora">Esplora</a><a href="#partecipa">Partecipa</a><a href="#progetto">Il progetto</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Un posto per fermarsi un momento</p>
+        <h1>Fuori Vetrina</h1>
+        <p class="hero-lead">Letture scelte, piccole scoperte e storie che meritano attenzione. Entra, guarda con calma e trova qualcosa che valga il tuo tempo.</p>
+        <a class="primary-btn" href="#letture">Inizia da qui <span aria-hidden="true">→</span></a>
+      </div>
+      <aside class="welcome-card">
+        <span class="card-kicker">Benvenuto</span>
+        <h2>Qui non devi correre.</h2>
+        <p>Abbiamo scelto poche cose, con cura. Una lettura, un'immagine, una scoperta o una domanda possono bastare per rendere diverso un momento della giornata.</p>
+      </aside>
+    </section>
+
+    <section id="letture" class="section-shell section">
+      <div class="section-heading"><div><p class="eyebrow">Da leggere</p><h2>Due letture scelte</h2></div><span class="section-note">Una prosa e una poesia</span></div>
+      <div class="reading-grid">
+        <article class="reading-card" data-kind="racconto">
+          <div class="reading-icon" aria-hidden="true">01</div>
+          <div><span class="tag">Racconto</span><h3>Testo da selezionare</h3><p>Qui entrerà un racconto scelto con cura da un'opera legalmente riproducibile.</p><p class="source">Autore · Opera · Fonte da verificare</p><button class="text-btn" type="button" data-open-reading="story">Leggi il racconto →</button></div>
+        </article>
+        <article class="reading-card" data-kind="poesia">
+          <div class="reading-icon" aria-hidden="true">02</div>
+          <div><span class="tag">Poesia</span><h3>Testo da selezionare</h3><p>Qui entrerà una poesia scelta per il suo significato, la sua bellezza o ciò che lascia a chi la legge.</p><p class="source">Autore · Raccolta · Fonte da verificare</p><button class="text-btn" type="button" data-open-reading="poem">Leggi la poesia →</button></div>
+        </article>
+      </div>
+      <p class="quiet-rule">Poche cose, belle e valide. La Home non viene riempita soltanto per sembrare ricca.</p>
+    </section>
+
+    <section class="feature-band section-shell section">
+      <article class="feature-card news-card"><span class="card-kicker">Oggi, una buona notizia</span><h2>Uno spazio per una notizia positiva, non un giornale.</h2><p>Quando avremo una notizia che merita davvero di essere condivisa, apparirà qui con data e fonte verificata.</p><div class="card-actions"><button class="secondary-btn" type="button" data-toast="La sezione sarà attivata con il primo contenuto verificato.">Leggi</button><button class="ghost-btn" type="button" data-comment="Buona notizia">Commenta</button><button class="ghost-btn" type="button" data-share="Buona notizia">Condividi</button></div></article>
+      <article class="feature-card photo-card"><span class="card-kicker">Foto del giorno</span><div class="photo-placeholder" role="img" aria-label="Spazio riservato alla fotografia del giorno"><span>Una fotografia<br>scelta con cura</span></div><p>Una sola immagine, con fonte o licenza quando necessario.</p></article>
+    </section>
+
+    <section class="small-grid section-shell section">
+      <article class="small-card"><span class="card-kicker">Una cosa che vale la pena sapere</span><h3>Una sola scoperta</h3><p>Curiosità vera, culturale, scientifica o umana. Solo quando vale davvero lo spazio.</p></article>
+      <article class="small-card"><span class="card-kicker">Una domanda da portarsi dietro</span><h3>Una domanda, non una lezione.</h3><p>Un piccolo invito a pensare. Nessun obbligo di rispondere.</p></article>
+      <article class="small-card"><span class="card-kicker">Da qualche parte nel mondo</span><h3>Una buona storia</h3><p>Una storia positiva realmente accaduta, scelta con attenzione e senza trasformare il sito in un notiziario.</p></article>
+      <article class="small-card"><span class="card-kicker">Ritorno al passato</span><h3>Quando il passato incontra il presente</h3><p>Occasionalmente, un oggetto, una foto o una piccola storia che meriti di essere riscoperta.</p></article>
+    </section>
+
+    <section id="storie" class="section-shell section page-section">
+      <div class="section-heading"><div><p class="eyebrow">Letture</p><h2>Storie</h2></div></div>
+      <div class="toolbar"><label class="search-box"><span class="sr-only">Cerca</span><input id="searchInput" type="search" placeholder="Cerca titoli, testi, argomenti…"></label><select id="categoryFilter" aria-label="Filtra per argomento"><option value="all">Tutti gli argomenti</option><option>Vita</option><option>Esperienze</option><option>Persone</option><option>Pensieri</option><option>Incontri</option><option>Curiosità</option></select></div>
+      <div id="storyList" class="story-list"><div class="empty-state">I contenuti pubblici saranno inseriti dopo la selezione e la verifica editoriale.</div></div>
+    </section>
+
+    <section id="esplora" class="section-shell section page-section">
+      <div class="section-heading"><div><p class="eyebrow">Esplora</p><h2>Trova qualcosa che ti interessa</h2></div></div>
+      <div class="category-grid"><button type="button" data-category="Vita">Vita</button><button type="button" data-category="Esperienze">Esperienze</button><button type="button" data-category="Persone">Persone</button><button type="button" data-category="Pensieri">Pensieri</button><button type="button" data-category="Incontri">Incontri</button><button type="button" data-category="Curiosità">Curiosità</button></div>
+    </section>
+
+    <section id="partecipa" class="section-shell section participate">
+      <div><p class="eyebrow">Partecipa</p><h2>Hai qualcosa da raccontare?</h2><p>Puoi condividere una storia con noi. L'invio non significa pubblicazione automatica: ogni contributo viene letto prima.</p></div>
+      <form id="storyForm" class="form-card">
+        <label>Nome o pseudonimo <span>(facoltativo)</span><input name="name" maxlength="80" placeholder="Puoi anche scrivere Anonimo"></label>
+        <label>Titolo <input name="title" maxlength="120" required></label>
+        <label>Argomento <select name="category" required><option value="">Scegli…</option><option>Vita</option><option>Esperienze</option><option>Persone</option><option>Pensieri</option><option>Incontri</option><option>Curiosità</option></select></label>
+        <label>La tua storia <textarea name="body" rows="9" maxlength="8000" required></textarea></label>
+        <label class="check"><input name="consent" type="checkbox" required> Dichiaro di inviare un testo che posso condividere e accetto che venga letto prima di una eventuale pubblicazione.</label>
+        <button class="primary-btn" type="submit">Invia la tua storia →</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="progetto" class="section-shell section project-section">
+      <div class="section-heading"><div><p class="eyebrow">Il progetto</p><h2>Perché esiste Fuori Vetrina</h2></div></div>
+      <div class="project-grid"><p>Fuori Vetrina nasce per raccogliere e proporre contenuti scelti con cura: letture, idee, immagini, piccole scoperte e contributi di chi desidera partecipare.</p><p>Non vogliamo riempire una pagina. Vogliamo lasciare al visitatore qualcosa che valga il tempo trascorso qui.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><strong>Fuori Vetrina</strong><span>Una cosa alla volta, ma fatta bene.</span><a href="#progetto">Il progetto</a></div></footer>
+
+  <dialog id="readingDialog" class="modal"><button class="modal-close" type="button" aria-label="Chiudi">×</button><div id="dialogContent"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
