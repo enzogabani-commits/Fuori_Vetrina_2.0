@@ -48,8 +48,8 @@ document.querySelectorAll('[data-category]').forEach(btn => btn.addEventListener
 const stories = [];
 async function loadStories() {
     try {
-        const response = await fetch('http://localhost:3000/api/stories');
-
+        const response = await fetch('/api/stories');
+                                        
         if (!response.ok) {
             throw new Error(`Errore API: ${response.status}`);
         }
