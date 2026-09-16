@@ -130,7 +130,7 @@ document.getElementById('storyForm').addEventListener('submit', async e => {
   };
 
   try {
-    const response = await fetch('http://localhost:3000/api/stories', {
+    const response = await fetch('/api/stories', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
