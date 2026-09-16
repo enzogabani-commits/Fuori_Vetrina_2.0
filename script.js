@@ -129,7 +129,12 @@ document.getElementById('storyForm').addEventListener('submit', async e => {
     consent_confirmed: data.get('consent') === 'on'
   };
 
-  try {
+  
+    const submitButton = form.querySelector('button[type="submit"]');
+if (submitButton.disabled) return;
+submitButton.disabled = true;
+try {
+
     const response = await fetch('/api/stories', {
       method: 'POST',
       headers: {
@@ -153,8 +158,12 @@ document.getElementById('storyForm').addEventListener('submit', async e => {
     console.error('Errore invio contributo:', error);
     document.getElementById('formStatus').textContent =
       'Non è stato possibile inviare il contributo. Riprova tra poco.';
-  }
+} finally {
+  submitButton.disabled = false;
+}
 });
+
+
 
 async function shareText(label){
   const data = {title:'Fuori Vetrina', text:label, url:location.href};
